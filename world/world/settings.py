@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-from configs import SECRETKEY
+from configs import SECRETKEY, DB_PASSWORD
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'maps',
         'USER': 'postgres',
-        'PASSWORD': '557878ars!!',
+        'PASSWORD': DB_PASSWORD,
         'HOST': 'localhost',
         'PORT': '5432'
     }
